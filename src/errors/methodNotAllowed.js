@@ -1,7 +1,7 @@
 
 function methodNotAllowed (req, res, next) {
     const { method } = req;
-    const url = req.originalURL;
+    const url = req.originalUrl;
 
     next({
         status: 405,
